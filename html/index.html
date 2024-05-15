@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevPro</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        #loginForm{
+            background: #000;
+            box-shadow: 0  0 50px #0ef;
+            border-radius: 20px;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="font-bold text-lg">DevPro</a>
+            <div>
+                <a href="login.html" class="mr-4" onclick="toggleForm('login')"> Login </a>
+                <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded" onclick="toggleForm('signup')">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+    <section class="bg-gray-900 text-white py-20 relative overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 ">
+            <img src="images/img1.jpg" alt="Background Image" class="object-cover w-full h-full opacity-30">
+        </div>
+    
+        <div class="container mx-auto flex flex-col items-center justify-center relative z-10">
+            <!-- Quote -->
+            <blockquote class="text-lg italic text-center mb-8 animate-text-flicker">
+                &lt;!-- The only way to do great work is to love what you do. --&gt;
+            </blockquote>
+    
+            <!-- Title and Description -->
+            <h1 class="text-4xl font-bold text-center mb-4">Welcome to DevPro</h1>
+            <p class="text-lg text-center">Empowering software enthusiasts to unleash their potential.</p>
+    
+            <!-- Get Started Button -->
+            <a href="login.html" class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded mt-8">Get Started</a>
+        </div>
+    
+        <!-- Anime Animation -->
+        <div class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-gray-900 via-transparent to-transparent z-0"></div>
+    </section>
+
+    <!-- Login Form -->
+    
+
+    <!-- Features Section -->
+    <section class="py-20">
+        <div class="container mx-auto flex flex-col items-center justify-center">
+            <h2 class="text-3xl text-gray-700 font-bold mb-8">Key Features</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature Cards -->
+                <div class="bg-gray-200 hover:bg-gray-300 shadow-md rounded-lg p-6 text-center transition duration-300">
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Task Management</h3>
+                    <p class="text-gray-700">Organize your tasks, set deadlines, and track progress.</p>
+                </div>
+                <div class="bg-gray-200 hover:bg-gray-300 shadow-md rounded-lg p-6 text-center transition duration-300">
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Project Tracking</h3>
+                    <p class="text-gray-700">Manage your projects, assign tasks, and collaborate with team members.</p>
+                </div>
+                <div class="bg-gray-200 hover:bg-gray-300 shadow-md rounded-lg p-6 text-center transition duration-300">
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Calendar Integration</h3>
+                    <p class="text-gray-700">Sync your tasks and deadlines with your calendar for better planning.</p>
+                </div>
+                <div class="bg-gray-200 hover:bg-gray-300 shadow-md rounded-lg p-6 text-center transition duration-300">
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">User Dashboard</h3>
+                    <p class="text-gray-700">Personalized dashboard to view your tasks, projects, and notifications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 DevPro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

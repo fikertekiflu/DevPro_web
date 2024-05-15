@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>login</title>
+</head>
+<body>
+    <!-- Login Form -->
+    <div id="loginForm" class=" fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-900 bg-opacity-75 z-50 hidden">
+        <div class="absolute inset-0 ">
+            <img src="images/login.jpg" alt="Background Image" class="object-cover w-full h-full opacity-30">
+        </div>
+        <div class="relative flex flex-col m-6 space-y-8 bg shadow-lg rounded-lg md:flex-row md:space-y-0">
+            <!-- left side -->
+            <div class="flex flex-col justify-center p-8 md:p-14">
+                <span class="mb-3 text-4xl text-white font-bold">Welcome back</span>
+                <span class="font-light text-white mb-8">Welcome back! Please enter your details</span>
+                <div class="py-4">
+                    <span class="mb-2 text-md text-white">User Name</span>
+                    <input type="text" class="w-full p-2 border border-gray-300 rounded-md placeholder-gray-500" name="email" id="email">
+                </div>
+                <div class="py-4">
+                    <span class="mb-2 text-md text-white">Password</span>
+                    <input type="password" name="pass" id="pass" class="w-full p-2 border border-gray-300 rounded-md placeholder-gray-500">
+                </div>
+                <div class="flex justify-between w-full py-4">
+                    <div class="mr-24">
+                        <input type="checkbox" name="ch" id="ch" class="mr-2">
+                        <span class="text-md text-white">Remember for 30 days</span>
+                    </div>
+                    <span class="font-bold text-md text-white">Forgot password</span>
+                </div>
+                <button class="w-full border  text-white p-2 rounded-lg mb-6 hover:bg-white hover:text-black hover:border hover:border-gray-300">Sign in</button>
+                <button class="w-full border  text-white border-gray-300 text-md p-2 rounded-lg mb-6 hover:bg-white hover:text-black hover:border hover:border-gray-300">
+                    <img src="images/google.jpg" alt="img" class="w-6 h-6 inline mr-2">
+                    Sign in with Google
+                </button>
+                <div class="text-center text-white">
+                    Don't have an account?
+                    <span class="font-bold text-blue-700">Sign up </span>
+                </div>
+            </div>
+            
+            <!-- right side -->
+            <!-- <div class="relative">
+                <img src="images/login.jpg" alt="img" class="w-[250px] h-full hidden rounded-r-2xl md:block object-cover">
+                 text on image -->
+                <!-- <div class="absolute hidden bottom-10 right-6 p-6 bg-white bg-opacity-30 backdrop-blur-sm rounded drop-shadow-lg md:block">
+                    <span class="text-white text-xl">We've been using Untitle to kick<br>start every new project and can't<br>imagine working without it.</span>
+                </div>
+            </div> --> 
+        </div>
+    </div>
